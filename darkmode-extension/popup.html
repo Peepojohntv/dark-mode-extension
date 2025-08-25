@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode Switch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 260px;
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      color: #222;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    h3 { margin-bottom: 15px; }
+
+    label { display: block; margin: 10px 0 5px; }
+
+    input[type="color"] { width: 100%; height: 30px; border: none; cursor: pointer; }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    button:hover { background: #333; }
+  </style>
+</head>
+<body>
+  <h3>Dark Mode Custom</h3>
+
+  <label for="bgColor">Hintergrundfarbe:</label>
+  <input type="color" id="bgColor" value="#121212">
+
+  <label for="textColor">Textfarbe:</label>
+  <input type="color" id="textColor" value="#e0e0e0">
+
+  <label><input type="checkbox" id="applyBody" checked> Body</label>
+  <label><input type="checkbox" id="applyLinks" checked> Links</label>
+  <label><input type="checkbox" id="applyButtons" checked> Buttons & Inputs</label>
+
+  <button id="apply">Anwenden</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
